@@ -455,7 +455,7 @@ a {
   margin-bottom: 40px;
   text-transform: uppercase;
     letter-spacing: 1px;
-    color: #AC2C2C;
+    color: var(--primary);
     font-size: 39px;
     line-height: 1;
     padding: 0;
