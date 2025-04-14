@@ -20,7 +20,7 @@
       <header class="header">
         <div class="logo">
           <a href="#">
-            <img src="./logo2.webp" alt="Aadishakti System Logo" />
+            <img src="./logo.png " alt="Aadishakti System Logo" />
           </a>
         </div>
         <div class="navigation">
@@ -128,8 +128,8 @@
           <h5>50kva air cooled servo stabilizer</h5>
         </div>
         <div class="product-card" onclick="openPopup()">
-          <img src="./Image/Distributed.png" alt="Distribution transformer">
-          <h5>Distribution transformer</h5>
+          <img src="./Image/Distributed.png" alt="linear transformers">
+          <h5>linear transformers</h5>
         </div>
         <div class="product-card" onclick="openPopup()">
           <img src="./Image/transformer.png" alt="Linear Type Servo Stabilizer">
@@ -339,20 +339,27 @@
       <!-- Contact Form -->
       <div class="form-container">
         <h2><span>CONTACT US</span>Drop Us Message</h2>
-        <form action="#" method="POST">
-          <div class="form-group">
-            <input type="text" placeholder="Name" required />
+        <div class="popup-content">
+      
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xkgjyleb" 
+            method="POST"
+            onsubmit="return handleSubmit(event);"
+          >
+            <input type="text" id="name" name="name" placeholder="Name" required />
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+            <input type="email" id="email" name="email" placeholder="Email" required />
+      
+            <button type="submit">Get Query</button>
+          </form>
+      
+          <div class="whatsapp-contact" style="margin-top: 15px;">
+            <a href="https://wa.me/9289424267" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+            </a>
           </div>
-          <div class="form-group">
-            <input type="tel" placeholder="Phone Number" required />
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Email" required />
-          </div>
-          <div class="form-group">
-            <button onclick="handleSubmit()">Get Query</button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
 

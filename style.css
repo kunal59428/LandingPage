@@ -28,7 +28,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 5em 0em 5em;
+  padding: 1em 5em;
   background-color: white;
   color: #000;
   position: relative;
@@ -78,7 +78,7 @@ a {
   border-radius: 3px;
 }
 .logo img {
-  width: 80px;
+  width: 120px;
 }
 .navigation {
   display: flex;
@@ -555,6 +555,12 @@ a {
   padding: 20px 30px;
   background: #fff;
   justify-items: center;
+}
+.form-container .popup-content {
+  background: white;
+  margin: 0;
+  padding: 10px;
+  max-width: 60%;
 }
 .form-container form {
   width: 100%;
