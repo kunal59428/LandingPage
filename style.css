@@ -587,6 +587,7 @@ a {
   }
   .form-container form {
     width: 100%;
+    margin-top: 0px;
   }
 }
 
@@ -781,7 +782,7 @@ footer {
 
 @media (max-width: 768px) {
   .header {
-    padding: 10px 1em 0em 1em;
+    padding: 10px;
   }
   .experience-badge span {
     font-size: 10px;
@@ -795,12 +796,8 @@ footer {
     left: 15px;
     padding: 10px 25px;
   }
-
-  .logo img {
-    width: 70px;
-  }
   .logo-footer img {
-    width: 90px;
+    width: 120px;
   }
 
   .banner-item img {
@@ -888,6 +885,8 @@ footer {
   }
   .logo-content {
     flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
   }
   .logo-content p {
     padding: 0px 10px;
@@ -902,4 +901,7 @@ footer {
   .copy-right {
     padding: 10px 10px 75px 10px;
   }
+  .form-container .popup-content {
+    max-width: 100%;
+}
 }
