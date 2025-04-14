@@ -637,7 +637,7 @@ a {
 }
 
 footer {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: white;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -666,7 +666,7 @@ footer {
   padding: 10px;
   text-align: center;
   border-top: 2px solid white;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 /* Bottom-bar */

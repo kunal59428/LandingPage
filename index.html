@@ -132,7 +132,7 @@
           <h5>linear transformers</h5>
         </div>
         <div class="product-card" onclick="openPopup()">
-          <img src="./Image/transformer.png" alt="Linear Type Servo Stabilizer">
+          <img src="./Image/Linear Type Servo Stabilizer.webp" alt="Linear Type Servo Stabilizer">
           <h5>Linear Type Servo Stabilizer</h5>
         </div>
         <div class="product-card" onclick="openPopup()">
@@ -366,7 +366,7 @@
     <!-- FOOTER -->
     <footer>
       <div class="logo logo-footer">
-        <a href="#"></a><img src="./logo.png" alt="Aadishakti System Logo" /></a>
+        <a href="#"></a><img src="./updated-logo.png" alt="Aadishakti System Logo" /></a>
       </div>
       <div class="logo-content">
         <p>
@@ -380,7 +380,7 @@
     </footer>
 
     <div class="copy-right">
-      <p>&copy; 2025 Aadishakti System. All rights reserved.</p>
+      <p>&copy; 2025 shakti Servo. All Rights Reserved.</p>
     </div>
 
     <!-- Bottom Bar -->
@@ -415,19 +415,18 @@
       <span class="close" onclick="closePopup()">&times;</span>
       <h2>Get in Touch</h2>
   
-      <form
-        id="contactForm"
-        action="https://formspree.io/f/xkgjyleb" 
-        method="POST"
-        onsubmit="return handleSubmit(event);"
-      >
-        <input type="text" id="name" name="name" placeholder="Name" required />
-        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
-        <input type="email" id="email" name="email" placeholder="Email" required />
-  
+      <!-- Form for Contact -->
+      <form id="contactForm" action="mail.php" method="POST" onsubmit="return handleSubmit(event);">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="tel" name="phone_number" placeholder="Phone Number" required />
+        <input type="email" name="email" placeholder="Email" required />
         <button type="submit">Get Query</button>
       </form>
   
+      <!-- Form response message -->
+      <div id="formResponse" style="margin-top: 10px;"></div>
+  
+      <!-- WhatsApp Contact Link -->
       <div class="whatsapp-contact" style="margin-top: 15px;">
         <a href="https://wa.me/9289424267" target="_blank" class="whatsapp-link">
           <i class="fab fa-whatsapp"></i> Contact on WhatsApp
@@ -435,6 +434,7 @@
       </div>
     </div>
   </div>
+  
 
 
 
