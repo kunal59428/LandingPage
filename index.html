@@ -402,25 +402,36 @@
     </a>
   </div>
 
-  <!-- PopupForm -->
-  <div id="popupForm" class="popup">
+  <!-- Popup Form -->
+  <div id="popupForm" class="popup" style="display: none;">
     <div class="popup-content">
       <span class="close" onclick="closePopup()">&times;</span>
       <h2>Get in Touch</h2>
   
-      <input type="text" id="name" placeholder="Name" required />
-      <input type="tel" id="phone" placeholder="Phone Number" required />
-      <input type="email" id="email" placeholder="Email" required />
+      <form
+        id="contactForm"
+        action="https://formspree.io/f/xkgjyleb" 
+        method="POST"
+        onsubmit="return handleSubmit(event);"
+      >
+        <input type="text" id="name" name="name" placeholder="Name" required />
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+        <input type="email" id="email" name="email" placeholder="Email" required />
   
-      <button onclick="handleSubmit()">Get Query</button>
+        <button type="submit">Get Query</button>
+      </form>
   
-      <div class="whatsapp-contact">
+      <div class="whatsapp-contact" style="margin-top: 15px;">
         <a href="https://wa.me/9289424267" target="_blank" class="whatsapp-link">
           <i class="fab fa-whatsapp"></i> Contact on WhatsApp
         </a>
       </div>
     </div>
   </div>
+
+
+
+  
       
       <!-- Button to open the popup -->
       <!-- <button onclick="openPopup()">Open Form</button> -->

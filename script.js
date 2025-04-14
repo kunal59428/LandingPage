@@ -1,17 +1,17 @@
-//pop-up
-function openPopup() {
-    document.getElementById("popupForm").style.display = "block";
-  }
+// //pop-up
+// function openPopup() {
+//     document.getElementById("popupForm").style.display = "block";
+//   }
 
-  function closePopup() {
-    document.getElementById("popupForm").style.display = "none";
-  }
+//   function closePopup() {
+//     document.getElementById("popupForm").style.display = "none";
+//   }
 
-  window.onclick = function(event) {
-    if (event.target === document.getElementById("popupForm")) {
-      closePopup();
-    }
-  }
+//   window.onclick = function(event) {
+//     if (event.target === document.getElementById("popupForm")) {
+//       closePopup();
+//     }
+//   }
 
 //   scroll
 let currentIndex = 0;
@@ -100,26 +100,43 @@ $(document).ready(function(){
 
 // PopUp Form
 
-function handleSubmit() {
+function openPopup() {
+  document.getElementById("popupForm").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popupForm").style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target === document.getElementById("popupForm")) {
+    closePopup();
+  }
+};
+
+function handleSubmit(event) {
+  event.preventDefault();
+
   const name = document.getElementById("name").value.trim();
   const phone = document.getElementById("phone").value.trim();
   const email = document.getElementById("email").value.trim();
 
   if (!name || !phone || !email) {
     alert("Please fill in all fields.");
-    return;
+    return false;
   }
 
   // Auto-download PDF
-  const pdfUrl = "files/shakti-servo-transformers.pdf"; // Make sure this file exists
+  const pdfUrl = "files/shakti-servo-transformers.pdf"; // Ensure this path is correct
   const link = document.createElement("a");
   link.href = pdfUrl;
-  link.download = "Query_Form.pdf";
+  link.download = "Shakti-serve.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-}
 
-function closePopup() {
-  document.getElementById("popupForm").style.display = "none";
+  // Submit the form after PDF download
+  event.target.submit(); // continue to Formspree
+
+  return true;
 }
