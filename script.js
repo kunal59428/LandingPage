@@ -1,17 +1,3 @@
-// //pop-up
-// function openPopup() {
-//     document.getElementById("popupForm").style.display = "block";
-//   }
-
-//   function closePopup() {
-//     document.getElementById("popupForm").style.display = "none";
-//   }
-
-//   window.onclick = function(event) {
-//     if (event.target === document.getElementById("popupForm")) {
-//       closePopup();
-//     }
-//   }
 
 //   scroll
 let currentIndex = 0;
@@ -44,8 +30,8 @@ var swiper = new Swiper(".slide-content", {
     dynamicBullets: true,
   },
   autoplay: {
-  delay: 1000,          // Time between transitions (in ms)
-  disableOnInteraction: false, // Keeps autoplay even after user interaction
+  delay: 1000,          
+  disableOnInteraction: false,
 },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -64,38 +50,6 @@ var swiper = new Swiper(".slide-content", {
   },
 });
 
-
-
-// Testimonial
-
-// $(document).ready(function(){
-//   $(".owl-carousel").owlCarousel({
-//     items: 3,
-//     autoplay: true,
-//     margin: 30,
-//     loop: true,
-//     dots: true,
-//     // nav: true,
-//     // navText: ["<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>"],
-//     responsive: {
-//       0: {
-//         items: 1
-//       },
-//       576: {
-//         items: 1
-//       },
-//       768: {
-//         items: 2
-//       },
-//       992: {
-//         items: 3
-//       },
-//       1200: {
-//         items: 3
-//       }
-//     }
-//   });
-// });
 
 
 // PopUp Form
@@ -129,8 +83,8 @@ function handleSubmit(event) {
 
         // Auto download the PDF
         const link = document.createElement('a');
-        link.href = 'files/shakti-servo-transformers.pdf'; // Path to your PDF file
-        link.download = 'shakti-servo-Brochure.pdf'; // Name for the downloaded file
+        link.href = 'files/shakti-servo-transformers.pdf'; 
+        link.download = 'shakti-servo-Brochure.pdf'; 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
