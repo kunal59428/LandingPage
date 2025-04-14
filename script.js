@@ -123,20 +123,50 @@ function handleSubmit(event) {
 
   if (!name || !phone || !email) {
     alert("Please fill in all fields.");
-    return false;
+    return;
   }
 
-  // Auto-download PDF
-  const pdfUrl = "files/shakti-servo-transformers.pdf"; // Ensure this path is correct
+  // ✅ Auto PDF download
+  const pdfUrl = "files/shakti-servo-transformers.pdf"; // No slash!
   const link = document.createElement("a");
   link.href = pdfUrl;
-  link.download = "Shakti-serve.pdf";
+  link.download = "Query_Form.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 
-  // Submit the form after PDF download
-  event.target.submit(); // continue to Formspree
+  alert("Form submitted and PDF download started.");
 
-  return true;
+
+  event.target.submit(); 
 }
+
+
+
+
+// // function handleSubmit(event) {
+// //   event.preventDefault();
+
+// //   const name = document.getElementById("name").value.trim();
+// //   const phone = document.getElementById("phone").value.trim();
+// //   const email = document.getElementById("email").value.trim();
+
+// //   if (!name || !phone || !email) {
+// //     alert("Please fill in all fields.");
+// //     return false;
+// //   }
+
+// //   // Auto-download PDF
+// //   const pdfUrl = "files/shakti-servo-transformers.pdf"; // Ensure this path is correct
+// //   const link = document.createElement("a");
+// //   link.href = pdfUrl;
+// //   link.download = "Shakti-serve.pdf";
+// //   document.body.appendChild(link);
+// //   link.click();
+// //   document.body.removeChild(link);
+
+// //   // Submit the form after PDF download
+// //   event.target.submit(); // continue to Formspree
+
+// //   return true;
+// }
