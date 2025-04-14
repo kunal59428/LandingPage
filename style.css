@@ -432,17 +432,52 @@ a {
   bottom: 30px;
 }
 
+/* Work-sector */
+
 /* Testimonial */
 
+/* Base padding */
 .section-padding {
-  padding: 80px 0px 60px 0px;
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./Image/feedback-bg.webp);
-  background-size: cover;
-  background-position: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* optional for contrast */
 }
 
+/* Flex layout */
+.work-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.work-sector {
+  text-align: center;
+}
+
+.work-sector h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.work-sector img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  .work-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .work-sector h2 {
+    font-size: 20px;
+  }
+}
+
+/*
 .owl-item {
   background-color: #fff;
   height: 25vh;
@@ -524,7 +559,7 @@ a {
   font-size: 12px;
   font-weight: normal;
   margin-top: 5px;
-}
+} */
 
 .contact-container {
   display: flex;
@@ -710,7 +745,6 @@ footer {
   color: #fff;
 }
 
-
 /* Floating Right Bottom Icons */
 
 .floating-icons {
@@ -832,21 +866,21 @@ footer {
   }
   .experience-badge span {
     font-size: 10px;
-}
-.experience-badge strong {
-  font-size: 20px;
-}
+  }
+  .experience-badge strong {
+    font-size: 20px;
+  }
 
-.experience-badge {
-  bottom: -10px;
-  left: 15px;
-  padding: 10px 25px;
-}
+  .experience-badge {
+    bottom: -10px;
+    left: 15px;
+    padding: 10px 25px;
+  }
 
   .logo img {
     width: 70px;
   }
-  .logo-footer img{
+  .logo-footer img {
     width: 90px;
   }
 
@@ -935,18 +969,18 @@ footer {
   }
   .logo-content {
     flex-wrap: wrap;
-}
-.logo-content p {
-  padding: 0px 10px;
-  font-size: 14px;
-}
-.floating-icons{
-  display: none;
-}
-.bottom-bar{
-  display: flex;
-}
-.copy-right{
-  padding: 10px 10px 75px 10px;
-}
+  }
+  .logo-content p {
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+  .floating-icons {
+    display: none;
+  }
+  .bottom-bar {
+    display: flex;
+  }
+  .copy-right {
+    padding: 10px 10px 75px 10px;
+  }
 }
