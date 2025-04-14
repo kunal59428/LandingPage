@@ -434,12 +434,9 @@ a {
 
 /* Work-sector */
 
-/* Testimonial */
-
-/* Base padding */
 .section-padding {
   padding: 60px 20px;
-  background-color: #f9f9f9; /* optional for contrast */
+  background-color: #f9f9f9; 
 }
 
 /* Flex layout */
@@ -477,89 +474,6 @@ a {
   }
 }
 
-/*
-.owl-item {
-  background-color: #fff;
-  height: 25vh;
-  align-content: center;
-  overflow: hidden;
-}
-
-.client-testimonial-carousel .owl-dots button {
-  height: 5px;
-  background: var(--secondary);
-  width: 20px;
-  display: inline-block;
-  margin: 5px;
-  transition: 0.2s;
-  border-radius: 2px;
-}
-
-.client-testimonial-carousel button.owl-dot.active {
-  background: var(--primary);
-  width: 30px;
-}
-
-.client-testimonial-carousel .owl-dots {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.single-testimonial-item {
-  position: relative;
-  margin: 2px;
-  padding: 10px 20px;
-  padding-left: 85px;
-}
-.single-testimonial-item p {
-  text-align: justify;
-  padding-top: 10px;
-  font-size: 12px;
-    text-transform: capitalize;
-}
-
-.single-testimonial-item:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f10e";
-  font-weight: 900;
-  position: absolute;
-  left: -140px;
-  top: -70px;
-  border-radius: 50%;
-  text-align: end;
-  font-size: 20px;
-  color: #fff;
-  background-color: var(--primary);
-  line-height: 30px;
-  height: 150px;
-  width: 150px;
-  align-content: center;
-
-  padding: 24px;
-}
-
-.single-testimonial-item:after {
-  background: #ddd;
-  content: "";
-  height: 70%;
-  left: 60px;
-  position: absolute;
-  top: 10%;
-  width: 1px;
-}
-
-.single-testimonial-item h3 {
-  font-size: 20px;
-  font-style: normal;
-  margin-bottom: 0;
-}
-
-.single-testimonial-item h3 span {
-  display: block;
-  font-size: 12px;
-  font-weight: normal;
-  margin-top: 5px;
-} */
 
 .contact-container {
   display: flex;
