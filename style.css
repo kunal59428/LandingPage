@@ -873,7 +873,7 @@ footer {
   .navbar.active {
     display: flex;
     z-index: 1;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .menu-toggle {
