@@ -127,7 +127,7 @@ function handleSubmit(event) {
   }
 
   // ✅ Auto PDF download
-  const pdfUrl = "/Files/shakti-servo-transformers.pdf"; // No slash!
+  const pdfUrl = "files/shakti-servo-transformers.pdf"; // No slash!
   const link = document.createElement("a");
   link.href = pdfUrl;
   link.download = "shakti_servo.pdf";
