@@ -435,7 +435,7 @@ a {
 /* Work-sector */
 
 .section-padding {
-  padding: 80px 20px;
+  padding: 60px 20px;
   background-color: #f9f9f9; 
 }
 
@@ -490,7 +490,7 @@ a {
       rgba(255, 255, 255, 0.9)
     ),
     url(./Image/link-bg.jpg);
-  padding: 20px 100px;
+  padding: 40px 100px;
 }
 
 .map-container {
