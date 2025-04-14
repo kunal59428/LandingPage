@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aadishakti System</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <a href="#">
+            <img src="./logo2.webp" alt="Aadishakti System Logo" />
+          </a>
+        </div>
+        <div class="navigation">
+
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="right-controls">
+          <button class="quote-btn" onclick="openPopup()">GET A QUOTE</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="auto-banner">
+      <div class="banner-track" id="bannerTrack">
+        <!-- Images -->
+        <div class="banner-item">
+          <img src="./Image/servo-shakti-banner-1.jpg" alt="Product 1" />
+        </div>
+        <div class="banner-item">
+          <img src="./Image/servo-shakti-banner-2.jpg" alt="Product 2" />
+        </div>
+        <div class="banner-item">
+          <img src="./Image/servo-shakti-banner-3.jpg" alt="Product 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./Image/about-2.jpg" alt="Servo Stabilizer" />
+            <div class="experience-badge">
+              <strong>14+</strong>
+              <span>Years Experience</span>
+            </div>
+          </div>
+          <div class="about-text">
+            <h4>About Aadishakti System</h4>
+            <h2>
+              Your Trusted Partner in Voltage<br />Stability Founded
+            </h2>
+            <hr class="title-underline" />
+            <p>
+              over 25 years ago by a visionary leader, Mr. N.c kushwaha with a passion for power solutions,
+              Shakti Servo has grown into a trusted name in the manufacturing
+              and export of high-performance Servo Voltage Stabilizers.
+              Headquartered in Delhi NCR, we serve a broad industrial base
+              across Gurgaon, Faridabad, Noida, Greater Noida, and Ghaziabad.
+              From the very beginning, our motto has been clear — “Trusted
+              Partner in Voltage Stability” — a promise we proudly uphold in
+              every product we deliver.
+            </p>
+            <p>
+              As an ISO 9001:2015 certified company, we specialize in designing
+              energy-efficient, durable, and custom-engineered stabilizers that
+              regulate voltage and protect critical equipment from fluctuations.
+              Our product range includes Single Phase, Three Phase,.........
+              Servo Stabilizers, designed for seamless integration across
+              various sectors such as CNC machinery, oil & gas, textiles, wood
+              cutting, and engineering processes.
+            </p>
+            <p>
+              Driven by a commitment to quality and innovation, our team of
+              experienced engineers and professionals ensures that every servo
+              stabilizer we manufacture meets global standards and undergoes
+              rigorous quality checks. We also offer in-house R&D and testing
+              facilities, enabling us to cater to custom industrial requirements
+              with fastest production and delivery capabilities across Pan
+              India.
+            </p>
+            <div class="right-controls">
+              <button class="quotes-btn" onclick="openPopup()">GET A QUOTE</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section id="products" class="product-section">
+      <div class="product-header">
+        <h4>Product Category</h4>
+        <h2>Discover Our Products</h2>
+        <hr class="title-underline" />  
+      </div>
+      <div class="product-cards">
+        <div class="product-card" onclick="openPopup()">
+          <img src="./Image/shakti-1.png" alt="50kva air cooled servo stabilizer">
+          <h5>50kva air cooled servo stabilizer</h5>
+        </div>
+        <div class="product-card" onclick="openPopup()">
+          <img src="./Image/Distributed.png" alt="Distribution transformer">
+          <h5>Distribution transformer</h5>
+        </div>
+        <div class="product-card" onclick="openPopup()">
+          <img src="./Image/transformer.png" alt="Linear Type Servo Stabilizer">
+          <h5>Linear Type Servo Stabilizer</h5>
+        </div>
+        <div class="product-card" onclick="openPopup()">
+          <img src="./Image/Air-cooled.png" alt="Air-cooled Type Servo">
+          <h5>Air-cooled Type Servo</h5>
+        </div>
+        <div class="right-controls">
+          <button class="quotes-btn" onclick="openPopup()">GET A QUOTE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+   
+      <div id="services" class="slide-container swiper">
+        <div class="slide-content">
+          <h4>SERVICES</h4>
+            <h1>Business Industries We Serve</h2>
+            <hr class="Service-underline" />
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/bank.webp" alt="" class="card-img">
+                </div>
+                <h2>Bank</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/building.webp" alt="" class="card-img">
+                </div>
+                <h2>Building</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/bungalow.webp" alt="" class="card-img">
+                </div>
+                <h2>Bungalow</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/home-appliance.webp" alt="" class="card-img">
+                </div>
+                <h2>Home Appliance</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/hospital.webp" alt="" class="card-img">
+                </div>
+                <h2>Hospital</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/industry.webp" alt="" class="card-img">
+                </div>
+                <h2>Industry</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/it-industry.webp" alt="" class="card-img">
+                </div>
+                <h2>It Industry</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/mall.webp" alt="" class="card-img">
+                </div>
+                <h2>Mall</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/acs.webp" alt="" class="card-img">
+                </div>
+                <h2>AC</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/office.webp" alt="" class="card-img">
+                </div>
+                <h2>Office</h2>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="openPopup()">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./Image/service/school.webp" alt="" class="card-img">
+                </div>
+                <h2>School</h2>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    
+<!-- Why Choose Us -->
+<section id="why" class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-image">
+        <img src="./Image/transform.jpg" alt="choose-us" />
+        <div class="experience-badge">
+          <strong>14+</strong>
+          <span>Years<br />Experience</span>
+        </div>
+        <div class="right-controls">
+          <button class="quotes-btn" onclick="openPopup()">GET A QUOTE</button>
+        </div>
+      </div>
+      <div class="about-text">
+        <h4>Why Choose Us?</h4>
+        <h2>
+          Choose reliability, efficiency, and <br />quality—Choose Shakti Servo!
+        </h2>
+        <hr class="title-underline" />
+          
+          <p>As a renowned <b>servo voltage stabilizers exporter in Delhi NCR</b>, we’re committed to delivering superior quality, innovation, and reliability. With more than 2-decades of industry expertise and a strong global presence, we provide cutting-edge voltage stabilization solutions tailored to industrial and commercial needs.</p>
+          <ul style="margin-left: 40px;">
+          <li><b>India’s Leading Manufacturer & Exporter </b>of Servo Voltage Stabilizers.</li>
+          <li><b>Stabilizes voltage from as low as 50 Volts</b> for uninterrupted operations.</li>
+          <li><b>Wide capacity range </b>from 0.5 KVA to 5000 KVA for diverse applications.</li>
+          <li><b>Fastest production & delivery </b>with ready stock up to 300 KVA.</li>
+          <li><b>ISO 9001-2015 certified </b>with NABL-approved lab testing.</li>
+          <li><b>Energy-efficient technology </b>with advanced ADMS & EDL systems.</li>
+          <li><b>Compliance with Indian </b>& International Standards for safety & performance.</li>
+          <li><b>Trusted worldwide </b>with satisfied clients in 30+ countries.</li>
+          <li><b>Global inspection approvals </b>from Intertek, SGS & Bureau Veritas.</li>
+          <li><b>Dedicated after-sales </b>service for seamless customer support.</li>
+          </ul>          
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<div id="testimonials" class="section-padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="owl-carousel client-testimonial-carousel">
+                  <div class="single-testimonial-item">
+                    <h3>Mithun Kumar</h3>
+                      <p>i bought a servo stabilizer from them a still it is working without any problem, even service is good and personally owner Mr. PK kushwaha is a nice person who looks directly to all customers</p>
+                  </div>
+                  <div class="single-testimonial-item">
+                    <h3>Sapan Kumar</h3>
+                      <p>Amazing service and customer service  by Aadishakti System industry and express delivery system<br><br><br></p>
+                  </div>
+                  <div class="single-testimonial-item">
+                    <h3>Arun Kumar</h3>
+                      <p>Very good product and services in jharkhand Highly recommended<br><br><br></p>
+                  </div>
+                  <div class="single-testimonial-item">
+                    <h3>Pawan Kunal</h3>
+                      <p>Very good servo voltage stabilize and good service and support by company<br><br><br></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+    <!-- CONTACT -->
+
+    <section class="contact-container">
+      <!-- Google Map -->
+      <div class="map-container">
+        <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112087.99264967435!2d77.01230366207207!3d28.527582036250244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e3131c10bb%3A0xbee0745a61eb3fc6!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1712920850187!5m2!1sen!2sin" 
+  width="100%" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+      </div>
+  
+      <!-- Contact Form -->
+      <div class="form-container">
+        <h2><span>CONTACT US</span>Drop Us Message</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <input type="text" placeholder="Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <button onclick="handleSubmit()">Get Query</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="logo logo-footer">
+        <a href="#"></a><img src="./logo.png" alt="Aadishakti System Logo" /></a>
+      </div>
+      <div class="logo-content">
+        <p>
+          Contact us: 
+          <a href="tel:+91-9289424267">+91-9289424267</a> | 
+          <a href="mailto:info@shaktiservo.com">info@shaktiservo.com</a>
+        </p>      
+        <p>Address: South Ganesh Nagar A-69 Street No.4 Delhi-110092</p>
+      </div>
+      
+    </footer>
+
+    <div class="copy-right">
+      <p>&copy; 2025 Aadishakti System. All rights reserved.</p>
+    </div>
+
+    <!-- Bottom Bar -->
+  <div class="bottom-bar">
+    <a href="tel:+91-9289424267" class="call">
+      <i class="fas fa-phone"></i>
+      Call
+    </a>
+    <a href="mailto:info@shaktiservo.com" class="enquire">
+      <i class="fas fa-envelope"></i>
+      Enquire
+    </a>
+    <a href="https://wa.me/9289424267" target="_blank" class="whatsapp">
+      <i class="fab fa-whatsapp"></i>
+      WhatsApp
+    </a>
+  </div>
+
+  <!-- Floating Right Bottom Icons -->
+  <div class="floating-icons">
+    <a href="tel:+91-9289424267" class="call" title="Call Now">
+      <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/9289424267" target="_blank" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- PopupForm -->
+  <div id="popupForm" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Get in Touch</h2>
+  
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <input type="email" id="email" placeholder="Email" required />
+  
+      <button onclick="handleSubmit()">Get Query</button>
+  
+      <div class="whatsapp-contact">
+        <a href="https://wa.me/9289424267" target="_blank" class="whatsapp-link">
+          <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+      
+      <!-- Button to open the popup -->
+      <!-- <button onclick="openPopup()">Open Form</button> -->
+      
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("navbar").classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
