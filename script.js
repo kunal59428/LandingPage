@@ -130,7 +130,7 @@ function handleSubmit(event) {
   const pdfUrl = "files/shakti-servo-transformers.pdf"; // No slash!
   const link = document.createElement("a");
   link.href = pdfUrl;
-  link.download = "Query_Form.pdf";
+  link.download = "shakti_servo.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
