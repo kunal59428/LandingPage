@@ -340,20 +340,21 @@
       <div class="form-container">
         <h2><span>CONTACT US</span>Drop Us Message</h2>
         <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <h2>Get in Touch</h2>
       
-          <form
-            id="contactForm"
-            action="https://formspree.io/f/xkgjyleb" 
-            method="POST"
-            onsubmit="return handleSubmit(event);"
-          >
-            <input type="text" id="name" name="name" placeholder="Name" required />
-            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
-            <input type="email" id="email" name="email" placeholder="Email" required />
-      
+          <!-- Form for Contact -->
+          <form id="contactForm" action="mail.php" method="POST" onsubmit="return handleSubmit(event);">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="tel" name="phone_number" placeholder="Phone Number" required />
+            <input type="email" name="email" placeholder="Email" required />
             <button type="submit">Get Query</button>
           </form>
       
+          <!-- Form response message -->
+          <div id="formResponse" style="margin-top: 10px;"></div>
+      
+          <!-- WhatsApp Contact Link -->
           <div class="whatsapp-contact" style="margin-top: 15px;">
             <a href="https://wa.me/9289424267" target="_blank" class="whatsapp-link">
               <i class="fab fa-whatsapp"></i> Contact on WhatsApp
